@@ -8,7 +8,7 @@ import CartContext from './contexts/CartContext';
 import Navigation from './components/Navigation';
 import Products from './components/Products';
 import ShoppingCart from './components/ShoppingCart';
-import { statement } from '@babel/template';
+//import { statement } from '@babel/template';
 
 function App() {
 	const [products] = useState(data);
@@ -29,7 +29,6 @@ function App() {
 
 	
 		useEffect(() => {
-			
 			if(window.localStorage.getItem('cart') !== null){
 				const data = JSON.parse(window.localStorage.getItem('cart'));
 				setCart(data);
